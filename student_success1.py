@@ -1,0 +1,12 @@
+import pandas as pd
+df=pd.read_csv("student_success_dataset(Sheet1).csv")
+print("Sample Rows")
+print(df.head())
+print("DataSet Shape")
+print(f'Rows:{df.shape[0]},Columns:{df.shape[1]}')
+print("DataSet Info")
+print(df.info())
+print("Summary Statistics")
+print(df.describe(include='all'))
+print("Missing Values")
+print(df.isnull().sum())
